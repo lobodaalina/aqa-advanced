@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "chalk": "^5.4.1"
-  }
+  },
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobodaalina/aqa-advanced.git"
+  },
+  "author": "Alina Loboda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lobodaalina/aqa-advanced/issues"
+  },
+  "homepage": "https://github.com/lobodaalina/aqa-advanced#readme"
 }
