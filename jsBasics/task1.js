@@ -14,13 +14,3 @@ console.log(digitNumber);
 console.log(isActive);
 console.log(unimportantNote);
 console.log(undefinedValue);
-
-const age = 20;
-
-if (age > 18) {
-  console.log('Особа повнолітня');
-} else if (age > 14) {
-  console.log('Особа неповнолітня');
-} else {
-  console.log('Особа малолітня');
-}
