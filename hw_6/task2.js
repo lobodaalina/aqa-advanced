@@ -6,10 +6,7 @@
 (чи є особа дорослою) в консоль для кожного випадку.*/
 
 function isAdult(age) {
-    if (age >=18) {
-        return 'true'
-    } else {
-        return 'false'}
-    }   
+   return age >=18
+}   
 console.log(isAdult(25))
 console.log(isAdult(15))
