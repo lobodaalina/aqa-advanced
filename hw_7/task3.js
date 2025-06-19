@@ -10,7 +10,7 @@
 "Робота завершена" в консоль, навіть якщо помилка виникла або не виникла. */
 
 function divide(numerator, denominator) {
-    if (numerator === 0 || denominator === 0) {
+    if (denominator === 0) {
         throw new TypeError("Ділення на нуль недопустиме!");
     }
     if (isNaN(numerator) || isNaN(denominator)) {
@@ -28,7 +28,7 @@ try {
 }
 
 try {
- divide(0, 200);
+ divide(10, 0);
 } catch (e) {
   console.error(e);
 }
