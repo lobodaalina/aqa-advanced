@@ -7,12 +7,12 @@ year: рядок, представляє ім'я власника автомоб
 Виведіть деструктуризовані змінні в консоль */
 
 const book = {
-    title: 'Words of Radiance',
-    author: 'Brandon Sanderson',
-    year: 2014
+	title: 'Words of Radiance',
+	author: 'Brandon Sanderson',
+	year: 2014,
 };
 
 const { title, author } = book;
 
 console.log(title);
-console.log(author)
+console.log(author);

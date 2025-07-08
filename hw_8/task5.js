@@ -8,6 +8,6 @@
 const firstArray = [1, 2, 3, 4];
 const secondArray = ['dog', 'cat', 'horse', 'lizard'];
 
-const newArray = firstArray.concat(secondArray)
+const newArray = firstArray.concat(secondArray);
 
-console.log(newArray)
+console.log(newArray);

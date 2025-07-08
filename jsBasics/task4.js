@@ -5,8 +5,7 @@
 
 let radius1 = 6.1;
 let circleArea = (Math.PI * Math.pow(radius1, 2)).toFixed(2);
-console.log(circleArea)
-
+console.log(circleArea);
 
 /*Створіть змінну length і присвойте їй числове значення довжини прямокутника.
 Створіть змінну width і присвойте їй числове значення ширини прямокутника.
@@ -22,4 +21,4 @@ console.log((length * width).toFixed(2));
 
 let radius2 = 5;
 let height = 10;
-console.log((Math.PI * Math.pow(radius2, 2) * height).toFixed(2))
+console.log((Math.PI * Math.pow(radius2, 2) * height).toFixed(2));

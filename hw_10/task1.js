@@ -13,19 +13,19 @@ const ebook1 = new EBook('The Ballad of Songbirds and Snakes', 'Suzanne Collins'
 
 ebook1.printInfo();
 
-book1.author = 'nw'
-ebook1.fileFormat = 'pdf'
-ebook1.author = 'Alina'
-ebook1.printInfo()
+book1.author = 'nw';
+ebook1.fileFormat = 'pdf';
+ebook1.author = 'Alina';
+ebook1.printInfo();
 
-const booksArray = [book1, book2, book3, ebook1]
+const booksArray = [book1, book2, book3, ebook1];
 
 console.log(Book.getOldestBook(booksArray));
 
-const ebook2 = EBook.createEBook(book2, 'epub')
+const ebook2 = EBook.createEBook(book2, 'epub');
 
-console.log(ebook2)
+console.log(ebook2);
 
-const ebook3 = EBook.createEBook(book3, 'epub')
+const ebook3 = EBook.createEBook(book3, 'epub');
 
-console.log(ebook3)
+console.log(ebook3);

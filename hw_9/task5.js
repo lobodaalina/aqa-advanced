@@ -4,28 +4,27 @@
 Зробіть деструктуризацію в циклі */
 
 const users = [
-    {
-        name: 'user1',
-        email: 'User1@gmail.com',
-        age: 15
-    },
-    {
-        name: 'user2',
-        email: 'User2@gmail.com',
-        age: 20
-    },
-    {
-        name: 'user3',
-        email: 'User3@gmail.com',
-        age: 50
-    },
-
+	{
+		name: 'user1',
+		email: 'User1@gmail.com',
+		age: 15,
+	},
+	{
+		name: 'user2',
+		email: 'User2@gmail.com',
+		age: 20,
+	},
+	{
+		name: 'user3',
+		email: 'User3@gmail.com',
+		age: 50,
+	},
 ];
 
 for (const user of users) {
-    console.log(user)
-};
+	console.log(user);
+}
 
-for (const {name, email, age } of users) {
-    console.log(`Username: ${name}, email: ${email}, age: ${age}`)
+for (const { name, email, age } of users) {
+	console.log(`Username: ${name}, email: ${email}, age: ${age}`);
 }

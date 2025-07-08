@@ -10,29 +10,27 @@
 "Робота завершена" в консоль, навіть якщо помилка виникла або не виникла. */
 
 function divide(numerator, denominator) {
-    if (denominator === 0) {
-        throw new TypeError("Ділення на нуль недопустиме!");
-    }
-    if (isNaN(numerator) || isNaN(denominator)) {
-        throw new TypeError("Це не цифра!")
-    }
-   return numerator / denominator;
+	if (denominator === 0) {
+		throw new TypeError('Ділення на нуль недопустиме!');
+	}
+	if (isNaN(numerator) || isNaN(denominator)) {
+		throw new TypeError('Це не цифра!');
+	}
+	return numerator / denominator;
 }
 
-console.log(divide(10,5))
+console.log(divide(10, 5));
 
 try {
-  divide('fkff', 1);
+	divide('fkff', 1);
 } catch (e) {
-  console.error(e);
+	console.error(e);
 }
 
 try {
- divide(10, 0);
+	divide(10, 0);
 } catch (e) {
-  console.error(e);
-}
-
-finally {
-    console.log('Робота завершена')
+	console.error(e);
+} finally {
+	console.log('Робота завершена');
 }
