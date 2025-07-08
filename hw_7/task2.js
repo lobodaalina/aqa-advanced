@@ -5,13 +5,13 @@
 Фунція повинна викликатися, доки num не стане менше або рівне 0.
 Викличте вашу функцію з аргументом, наприклад, 5, щоб почати рекурсивний лічильник. */
 
-function myFunction (num) {
-    if (num <= 0) {
-        return console.log(0);
-    } else {
-        console.log(num);
-        myFunction(num - 1)
-    }
+function myFunction(num) {
+	if (num <= 0) {
+		return console.log(0);
+	} else {
+		console.log(num);
+		myFunction(num - 1);
+	}
 }
 
 myFunction(5);

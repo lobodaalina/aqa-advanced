@@ -6,29 +6,30 @@
 import Book from './Book.js';
 
 class EBook extends Book {
-    constructor(name, author, publishingYear, fileFormat) {
-        super(name, author, publishingYear);
-        this._fileFormat = fileFormat;
-    }
+	constructor(name, author, publishingYear, fileFormat) {
+		super(name, author, publishingYear);
+		this._fileFormat = fileFormat;
+	}
 
-    get fileFormat() {
-        return this._fileFormat
-    }
+	get fileFormat() {
+		return this._fileFormat;
+	}
 
-    set fileFormat(value) {
-        if (value !== 'ebup') {
-            console.log('Wrong format')
-        }
-    }
+	set fileFormat(value) {
+		if (value !== 'ebup') {
+			console.log('Wrong format');
+		}
+	}
 
-    printInfo() {
-        console.log(`The e-book "${this.name}" by ${this.author} was published in ${this.publishingYear} and is available in ${this.fileFormat} format`)
-    }
+	printInfo() {
+		console.log(
+			`The e-book "${this.name}" by ${this.author} was published in ${this.publishingYear} and is available in ${this.fileFormat} format`,
+		);
+	}
 
-    static createEBook (book, fileFormat) {
-        return new EBook(book._name, book._author, book._publishingYear, fileFormat);
-    }
-
-};
+	static createEBook(book, fileFormat) {
+		return new EBook(book._name, book._author, book._publishingYear, fileFormat);
+	}
+}
 
 export default EBook;
