@@ -15,7 +15,13 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky"
+		"prepare": "husky || true"
+	},
+	"lint-staged": {
+		"**/*.{js,ts,mjs,jsx,tsx}": [
+			"prettier --write",
+			"eslint --fix"
+		]
 	},
 	"repository": {
 		"type": "git",

@@ -1,1 +1,2 @@
-npm run lint
+npx prettier --write .
+npx eslint . --ext .js,.ts --fix
