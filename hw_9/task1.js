@@ -14,4 +14,4 @@ student.lastName = 'Doe';
 student.age = 24;
 student.courses = ['Китайська', 'Англійська', 'Література'];
 
-console.log(student)
+console.log(student);
