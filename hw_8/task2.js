@@ -8,6 +8,6 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-const numbersIndex = numbers.map((number, index) => number * index)
+const numbersIndex = numbers.map((number, index) => number * index);
 
-console.log(numbersIndex)
+console.log(numbersIndex);

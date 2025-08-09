@@ -8,11 +8,11 @@
 const number = 8;
 
 for (let i = 1; i <= 10; i++) {
-    console.log(`${i} x ${number} = ${i * number}`)
+	console.log(`${i} x ${number} = ${i * number}`);
 }
 
 let i = 1;
 while (i <= 10) {
-    console.log(`${i} x ${number} = ${i * number}`);
-    i++;
+	console.log(`${i} x ${number} = ${i * number}`);
+	i++;
 }

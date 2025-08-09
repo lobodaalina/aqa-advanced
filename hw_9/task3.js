@@ -12,17 +12,17 @@ owner: число, представляє рік випуску автомобі
 */
 
 const car1 = {
-    brand: 'Alfa Romeo',
-    model: 'Giulia',
-    year: 2016
+	brand: 'Alfa Romeo',
+	model: 'Giulia',
+	year: 2016,
 };
 
 const car2 = {
-    brand: 'Volkswagen',
-    model: 'Golf',
-    owner: 'Alina'
+	brand: 'Volkswagen',
+	model: 'Golf',
+	owner: 'Alina',
 };
 
-const car3 = { ...car1, ...car2}
+const car3 = { ...car1, ...car2 };
 
-console.log(car3)
+console.log(car3);
