@@ -8,47 +8,39 @@
 Присвойте значення отримані від цих виразів до змінних*/
 
 const myPromise = new Promise((resolve, reject) => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-    }
-)
+	fetch('https://jsonplaceholder.typicode.com/todos/1');
+});
 
 const getToDo = new Promise((resolve, reject) => {
-   fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(response => {
-        resolve(response.json())
-    })
-    .catch(error => {
-        reject(error)
-    })
-}
-)
-
+	fetch('https://jsonplaceholder.typicode.com/todos/1')
+		.then((response) => {
+			resolve(response.json());
+		})
+		.catch((error) => {
+			reject(error);
+		});
+});
 
 const getUser = new Promise((resolve, reject) => {
-   fetch('https://jsonplaceholder.typicode.com/users/1')
-    .then(response => {
-        resolve(response.json())
-    })
-    .catch(error => {
-        reject(error)
-    })
-}
-)
+	fetch('https://jsonplaceholder.typicode.com/users/1')
+		.then((response) => {
+			resolve(response.json());
+		})
+		.catch((error) => {
+			reject(error);
+		});
+});
 
-const promisesCollection = Promise.all([getToDo, getUser])
+const promisesCollection = Promise.all([getToDo, getUser]);
 
 let promiseAllResult;
-promisesCollection
-    .then(result => {
-        console.log(result);
-    promiseAllResult = result
-    })
-;
+promisesCollection.then((result) => {
+	console.log(result);
+	promiseAllResult = result;
+});
 
 let promiseRaceResult;
-Promise.race([getToDo, getUser])
-    .then(result => {
-        console.log('Fulfilled: ', result);
-    promiseRaceResult = result
-    })
-
+Promise.race([getToDo, getUser]).then((result) => {
+	console.log('Fulfilled: ', result);
+	promiseRaceResult = result;
+});
